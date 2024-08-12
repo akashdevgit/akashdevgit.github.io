@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weightMonitor</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Day" id="day">
+    <input type="text" placeholder="Weight" id="weight"> 
+    <button onclick="add()">Add</button>
+    <br>
+    <br>
+    <table id="data">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+
+<script>
+    
+    
+
+    function add() {
+        
+        var tableBody = document.querySelector('#data tbody')
+        var newRow = document.createElement('tr')
+
+        var day = document.createElement('td')
+        var weight = document.createElement('td')
+
+        day.textContent = document.getElementById('day').value
+        weight.textContent = document.getElementById('weight').value
+        
+        newRow.append(day)
+        newRow.append(weight)
+
+        tableBody.append(newRow)
+
+    }
+
+    
+
+    
+    
+</script>
+
+
+
+</body>
+</html>
