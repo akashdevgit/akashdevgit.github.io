@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "mv";
+    src: url("../assets/fonts/mv.otf")
+}
+
+@font-face {
+    font-family: "dc";
+    src: url("../assets/fonts/Decaydence.otf")
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content:center;
+    opacity: 0.5;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+        
+}
+
+.nav-item {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.nav-item:hover{
+    background-color: #555;
+}
+.nav-item > a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    display: block;
+}
+
+.hero {
+    background-image: url("../images/background.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.about {
+    background-image: url("../images/about.jpg");
+    height: 880px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px
+}
+
+.about-title{
+    font-family: dc;
+    letter-spacing: 5px;
+}
+
+.about-text {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.SIDE {
+   padding:30px; 
+}
+
+.enc{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.5);
+    padding:10px;
+}
+
+.rside {
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    padding:30px;
+}
+
+.rside > * {
+    padding: 20px;
+}
